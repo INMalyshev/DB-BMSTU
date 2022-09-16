@@ -30,7 +30,7 @@ class ProvidersGenerator:
                 rate = random.randint(0, 100)
                 mail = self.faker.ascii_company_email()
                 
-                file.write(f'{name};{signing};{rate};{mail}\n')
+                file.write(f'{curr};{name};{signing};{rate};{mail}\n')
                 curr += 1
 
 p = ProvidersGenerator()
