@@ -1,40 +1,42 @@
 # Лабораторная работа № 1
 
-- ### Как поднять базу данных в Docker-е на примере PostgreSQL?
+## 1. Ставим DOCKER
 
-  - Пользуемся этим
+## 2. Как поднять базу данных в Docker-е на примере PostgreSQL?
 
-    `docker run --name my_test_pg -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres`
+- Пользуемся этим
 
-- ### Как подключиться к PostgreSQL в контейнере?
+  `docker run --name my_test_pg -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres`
 
-  - Один раз устанавливаем:
+## 3. Как подключиться к PostgreSQL в контейнере?
 
-    `sudo apt install postgresql-client`
+- Один раз устанавливаем:
 
-  - При подключении:
+  `sudo apt install postgresql-client`
 
-    `psql -h 127.0.0.1 -U postgres -d postgres`
+- При подключении:
 
-    > пароль: `postgres`
+  `psql -h 127.0.0.1 -U postgres -d postgres`
 
-  - Затестим:
+  > пароль: `postgres`
 
-    `selectel=# create table cities (name varchar(80));`
+- Затестим:
 
-    > CREATE TABLE
+  `selectel=# create table cities (name varchar(80));`
 
-    `selectel=# insert into cities values ('Moscow');`
+  > CREATE TABLE
 
-    > INSERT 0 1
+  `selectel=# insert into cities values ('Moscow');`
 
-    `selectel=# select * from cities;`
+  > INSERT 0 1
 
-    >   name
-    >
-    > Moscow
-    > (1 row)
+  `selectel=# select * from cities;`
 
-  - Запуск sql-скрипта:
+  > name
+  >
+  > Moscow
+  > (1 row)
 
-    `selectel=# \i <абсолютный путь до скрипта>`
+  ## 4. Запуск sql-скрипта:
+
+  `selectel=# \i <абсолютный путь до скрипта>`
