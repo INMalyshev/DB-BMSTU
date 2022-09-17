@@ -34,8 +34,8 @@ class ProvidersGenerator:
                 curr += 1
 
 p = ProvidersGenerator()
-p.generate(10)
-        
+p.generate(1000)
+
 
 
 

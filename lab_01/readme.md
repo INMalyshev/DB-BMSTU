@@ -22,15 +22,15 @@
 
 - Затестим:
 
-  `selectel=# create table cities (name varchar(80));`
+  `postgres=# create table cities (name varchar(80));`
 
   > CREATE TABLE
 
-  `selectel=# insert into cities values ('Moscow');`
+  `postgres=# insert into cities values ('Moscow');`
 
   > INSERT 0 1
 
-  `selectel=# select * from cities;`
+  `postgres=# select * from cities;`
 
   > name
   >
