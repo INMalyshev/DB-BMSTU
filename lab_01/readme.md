@@ -40,3 +40,7 @@
 ## 4. Запуск sql-скрипта:
 
 `selectel=# \i <абсолютный путь до скрипта>`
+
+## Схема
+
+![schema](/home/malyshevin/Documents/data_bases/lab_01/schema.svg)
