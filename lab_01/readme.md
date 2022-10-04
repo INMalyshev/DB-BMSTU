@@ -43,4 +43,4 @@
 
 ## Схема
 
-![schema](/home/malyshevin/Documents/data_bases/lab_01/schema.svg)
+![schema](./schema.svg)
